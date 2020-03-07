@@ -1,0 +1,70 @@
+section{
+	padding-top: 2rem;
+}
+
+.section-big{
+	height: 25rem;
+}
+
+.section-small{
+	height: 15rem;
+}
+
+#carousel{
+	height: 55vh;
+}
+
+.section-big .top-section{
+	height: 15%;
+}
+
+.section-big .body-section{
+	height: 85%;
+}
+
+.section-small .top-section{
+	height: 25%;
+}
+
+.section-small .body-section{
+	height: 75%;
+}
+
+.description{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	visibility: hidden;
+}
+
+.image:hover .description{
+	visibility: visible;
+	-webkit-animation: fadeIn 0.5s;
+  	animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.detail-game{
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.detail-game-mini{
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.image{
+	background-size: 100% 100%!important;
+	background-repeat: no-repeat!important;
+	cursor: pointer;
+}

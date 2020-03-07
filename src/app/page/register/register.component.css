@@ -1,0 +1,104 @@
+#main-body{
+	height: 90vh;
+	width: 100%
+}
+
+#div-form{
+	margin-top: 0.5rem;
+	width: 50%;
+	box-shadow: 0px 0px 5px 5px gray;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section-register{
+	display: none;
+}
+
+.active{
+	display: flex;
+	justify-content: space-between;
+}
+
+#button-back{
+	display: none;
+}
+
+.card-class{
+	height: 80vh;
+	background-size: 100% 100%!important;
+	background-repeat: no-repeat!important;
+}
+
+.description{
+	background: rgba(0,0,0,0.5);
+	color: white;
+	visibility: hidden;
+}
+
+.card-class:hover .description{
+	visibility: visible;
+	-webkit-animation: fadeIn 0.5s;
+  	animation: fadeIn 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.description p{
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.benefit p{
+	color: yellow;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+.divider{
+	margin: 1rem 0;
+	border: 1px solid gray;
+}
+
+form input, form .submit{
+	margin: 0.4rem 0;
+}
+
+input{
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+
+.dev-part {
+	display: none;
+}
+
+.dev-part.active {
+	display: flex;
+}
+
+.active{
+	-webkit-animation-name: flip; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  	animation-name: flip;
+  	animation-duration: 0.5s;
+}
+
+@-webkit-keyframes flip {
+	from {transform: rotateY(180deg);} 
+	to {transform: rotateY(360deg);}
+}
+  
+@keyframes flip {
+	from {transform: rotateY(180deg);}
+	to {transform: rotateY(360deg);}
+}

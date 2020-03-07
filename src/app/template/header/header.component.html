@@ -1,0 +1,66 @@
+<header id="header">
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+    	<div id="menu-head">
+    		<div class="col-6 pl-0 d-flex">
+    			<div class="h-100 logo active" routerLink="/">
+    				<i class="fas fa-power-off"></i>
+    			</div>
+    			<div class="pl-5">
+    				<ul id="list-menu" class="list-menu d-flex m-0">
+    					<li class="text-uppercase" routerLink="/">store</li>
+						<div class="pr-3"></div>
+						<li class="text-uppercase">devlogs</li>
+						<div class="pr-3"></div>
+						<li class="text-uppercase">about</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="col-6 pr-0 d-flex">
+    			<div class="w-100 h-100 float-right">
+    				<ul id="menu-guest" class="list-user">
+    					<li class="px-3" routerLink="/login">Masuk</li>
+    					<li class="px-3" routerLink="/register">Daftar</li>
+					</ul>
+					<div id="menu-profile" class="justify-content-end">
+						<div id="my-profile" (click)="openProfile()">
+							<div id="profile-display-menu">Lukas Felano</div>
+							<div id="profile-pic-menu">
+								<div id="img-menu" style="background-image: url('assets/img/header/belfast.png');"></div>
+							</div>
+							
+						</div>
+						<div id="my-menu">
+							<ul>
+								<li (click)="logOut()">Log Out</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- menu responsive -->
+		<div id="menu-head-responsive">
+			<div class="h-100 logo-responsive active" (click)="openMenu()">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class="w-100 d-flex justify-content-center align-items-center">INDIEGIM</div>
+		</div>
+		<div id="menu-nav">
+			<ul class="ul-nav pb-3">
+				<li routerLink="/">Home</li>
+				<li>Store</li>
+				<li>Devlogs</li>
+				<li>About</li>
+				<li routerLink="/login">Login</li>
+			</ul>
+			<div id="circle-close" class="circle-white" (click)="closeMenu()">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+    </div>
+  </div>
+  
+</header>

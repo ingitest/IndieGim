@@ -1,0 +1,306 @@
+<app-header></app-header>
+<div id="content" class="container-fluid">
+  <div class="row">
+    <div class="w-100 px-sm-5 px-0 pt-sm-3">
+      <div class="col-12 head-carousel">
+        <div id="carousel">
+
+          <div class="button-carousel left" (click) = "next(1)">
+            <div><i class="fas fa-chevron-left"></i></div>
+          </div>
+          <div class="button-carousel right" (click) = "next(-1)">
+            <div><i class="fas fa-chevron-right"></i></div>
+          </div>
+
+          <div class="w-100 h-100 image carousel-items active" style="background:url('assets/img/main/game1.jpg')" [routerLink]="['/detail/null']">
+            <div class="w-100 h-75"></div>
+            <div class="w-100 h-25 description">
+              <div class="detail-game px-3">
+                <p class="text-right">Omega Quintet</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 h-100 image carousel-items" style="background:url('assets/img/main/game2.jpg')" [routerLink]="['/detail/null']">
+            <div class="w-100 h-75"></div>
+            <div class="w-100 h-25 description">
+              <div class="detail-game px-3">
+                <p class="text-right">atelier firis the alchemist and the mysterious journey</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 h-100 image carousel-items" style="background:url('assets/img/main/game3.jpg')" [routerLink]="['/detail/null']">
+            <div class="w-100 h-75"></div>
+            <div class="w-100 h-25 description">
+              <div class="detail-game px-3">
+                <p class="text-right">Atelier Lydie & Suelle ~The Alchemists and the Mysterious Paintings~</p>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+      <div class="col-12">
+        <section id="section-one" class="section-big">
+          <div class="d-flex top-section">
+            <div class="col-6 pl-0">
+              <h2>Your Wishlist</h2>
+            </div>
+            <div class="col-6 pr-0">
+              <button class="btn btn-primary float-right">See More</button>
+            </div>
+          </div>
+          <div class="d-sm-flex body-section">
+            <div id="div-promo" class="d-sm-flex col-12 col-sm-6 pl-sm-0">
+              <div class="col-sm-6 col-12 pl-sm-0">
+                <div class="w-100 h-100 image" style="background:url('assets/img/promo/game1.jpg')">
+                  <div class="w-100 h-75"></div>
+                  <div class="w-100 h-25 description">
+                    <div class="detail-game px-3">
+                      <p class="text-right">Death end re;Quest</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-12 pr-sm-0">
+                <div class="w-100 h-100 image" style="background:url('assets/img/promo/game2.jpg')">
+                  <div class="w-100 h-75"></div>
+                  <div class="w-100 h-25 description">
+                    <div class="detail-game px-3">
+                      <p class="text-right">Mary Skelter Nightmares</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex col-sm-6 col-12 pr-sm-0">
+              <div class="col-6 pl-0 pr-1">
+                <div class="w-100 h-50 pb-2">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game1.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Death end re;Quest</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100 h-50">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game2.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Mary Skelter Nightmares</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 pr-0 pl-1">
+                <div class="w-100 h-50 pb-2">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game3.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Atelier Sophie: The Alchemist of the Mysterious Book</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100 h-50">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game4.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Nekopara vol 1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-big">
+          <div class="d-flex top-section">
+            <div class="col-6 pl-0">
+              <h2>Recommendation Game</h2>
+            </div>
+            <div class="col-6 pr-0">
+              <button class="btn btn-primary float-right">See More</button>
+            </div>
+          </div>
+          
+          <div class="d-sm-flex body-section">
+            <div class="d-flex col-sm-6 pl-0">
+              <div class="w-100 h-100 pl-0]">
+                <div class="w-100 h-100 image" style="background:url('assets/img/promo/game1.jpg')">
+                  <div class="w-100 h-75"></div>
+                  <div class="w-100 h-25 description">
+                    <div class="detail-game-mini px-3">
+                      <p class="text-right">Atelier Sophie: The Alchemist of the Mysterious Book</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex col-sm-6 pr-0">
+              <div class="col-6 pl-0 pr-1">
+                <div class="w-100 h-50 pb-2">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game1.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Death end re;Quest</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100 h-50">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game2.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Mary Skelter Nightmares</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 pr-0 pl-1">
+                <div class="w-100 h-50 pb-2">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game3.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Atelier Sophie: The Alchemist of the Mysterious Book</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100 h-50">
+                  <div class="w-100 h-100 image" style="background:url('assets/img/promo/game4.jpg')">
+                    <div class="w-100 h-75"></div>
+                    <div class="w-100 h-25 description">
+                      <div class="detail-game-mini px-3">
+                        <p class="text-right">Nekopara vol 1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section-small">
+        <div class="d-flex top-section">
+          <div class="col-6">
+            <h2>Same Genre You play</h2>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-primary float-right">See More</button>
+          </div>
+        </div>
+        <div class="d-flex body-section">
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game1.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Death end re;Quest</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game2.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Mary Skelter Nightmares</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game3.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Atelier Sophie: The Alchemist of the Mysterious Book</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game4.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Nekopara vol 1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-small">
+        <div class="d-flex top-section">
+          <div class="col-6">
+            <h2>Your Friend play</h2>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-primary float-right">See More</button>
+          </div>
+        </div>
+
+        <div class="d-flex body-section">
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game1.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Death end re;Quest</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game2.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Mary Skelter Nightmares</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game3.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Atelier Sophie: The Alchemist of the Mysterious Book</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 h-100">
+            <div class="w-100 h-100 image" style="background:url('assets/img/promo/game4.jpg')">
+              <div class="w-100 h-75"></div>
+              <div class="w-100 h-25 description">
+                <div class="detail-game-mini px-3">
+                  <p class="text-right">Nekopara vol 1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

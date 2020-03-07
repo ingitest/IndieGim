@@ -1,0 +1,123 @@
+.bg-gray{
+	background-color: gray;
+	color: white;
+}
+
+.bg-lightgray{
+	background-color: lightgray;
+}
+
+.no-button{
+	border: none;
+}
+
+.banner-game{
+	width: 100%;
+	height: 60vh;
+	background-size: 100% 100%!important;
+}
+
+.background-banner{
+    height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.title-game{
+	display: flex;
+	align-items: flex-end;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.header{
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.logo-back{
+	font-size: 1.2rem;
+	align-self: flex-end;
+	cursor: pointer;
+}
+
+.compatible{
+	font-size: 2rem;
+}
+
+.preview-game{
+	height: 45vh;
+}
+
+.preview-item{
+	background-size: 100% 100%!important;
+	height: 100%;
+}
+
+.list-items{
+	height: 90%;
+}
+
+.list-preview{
+	height: 10%;
+}
+
+.list-preview ul{
+	list-style: none;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.bullet{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: gray;
+}
+
+.other-game{
+	height: 30vh;
+	background-size: 100% 100%!important;
+}
+
+.header-text{
+	border-bottom: 1px solid gray;
+	font-size: 1.2rem;
+	padding-bottom: 0.5rem;
+}
+
+.header-no-border{
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+.type-page{
+	display: none;
+	width: 100%;
+}
+
+.type-page.active{
+	display: block;
+}
+
+.os-description{
+	display: none;
+}
+
+.os-description.active{
+	display: flex;
+}
+
+.os-tab{
+	cursor: pointer;
+	border-radius: 1rem;
+}
+
+.os-tab:hover{
+	background-color: rgba(255,255,255, 0.6);
+}
+
+.os-tab.active{
+	font-weight: 700;
+	color: peru;
+	box-shadow: 0px 0px 15px beige;
+}

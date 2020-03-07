@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<div id="content" class="container-fluid">
+  <div class="row">
+    <div id="main-body">
+      <div id="div-form">
+        <div class="col-12 py-3">
+            <div class="col-12 header-text">
+                Sign In
+                <div class="divider"></div>
+            </div>  
+        </div>
+        
+        <div class="col-12 pt-1 pb-4">
+            <div class="d-flex pb-3">
+                <div class="col-6">
+                    <button class="btn btn-primary w-100"><i class="fab fa-facebook-square"></i></button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-primary w-100"><i class="fab fa-google"></i></button>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="divider"></div>
+            </div>
+        </div>
+        <form class="col-12" id="form-login">
+            <div class="col-12 pt-3 pb-4">
+                <input class="w-100 input px-2" type="text" name="usermail" placeholder="*Username">
+            </div>
+            <div class="col-12 pb-2">
+                <input class="w-100 input px-2" type="password" name="password" placeholder="*Password">
+            </div>
+            <div class="col-12 pb-4">
+                <input class="radio" type="radio" name="check"> Remember Me
+            </div>
+            <div class="col-12 pb-3">
+                <button type="submit" class="w-100 btn btn-primary" (click)="submitLogin()">Login</button>
+            </div>
+            <div class="col-12 d-flex pb-3">
+                <div class="w-50 text-left"><span class="link" routerLink="/register">buat Account Baru</span></div>
+                <div class="w-50 text-right"><span class="link">lupa password ?</span></div>
+            </div>
+            <div class="col-12 text-justify pb-4">
+                By clicking log in, you agree to IndieGim Terms of Use, Privacy Policy and Cookie Policy.
+            </div>
+        </form>
+
+
+          
+      </div>
+    </div>
+  </div>
+</div>

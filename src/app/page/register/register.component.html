@@ -1,0 +1,118 @@
+<app-header></app-header>
+<div id="content" class="container-fluid">
+  <div class="row">
+    <div id="main-body">
+      <div id="div-form">
+        <div class="d-flex justify-content-center">
+          <button id="button-back" class="btn btn-primary m-1" (click)="pick('pick')">Back</button>
+          <p id="title-register" class="text-center m-1">Choose Your Class</p>
+        </div>
+        <section id="pick-class" class="section-register active">
+          <div class="card-class col-6 px-0" style="background:url('assets/img/register/gamer.jpg')" (click)="pick('register')">
+            <div class="d-flex h-100 justify-content-center align-items-center description">
+              <p>Gamer</p>
+            </div>
+          </div>
+          <div class="card-class col-6 px-0" style="background:url('assets/img/register/developer.jpg')" (click)="pick('developer')">
+            <div class="d-flex h-100 justify-content-center align-items-center description">
+              <p>Developer</p>
+            </div>
+          </div>
+        </section>
+        <section id="gamer" class="section-register">
+          <div class="card-class col-6 px-0" style="background-color:rgba(0,0,0,0.3)">
+            <div class="d-flex h-100">
+              <div class="text-justify w-100 h-100 p-3 benefit">
+                <p class="mb-1">Why join indiegim?</p>
+                <p>Because get Salary</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-class col-6 px-0">
+            <div class="d-flex h-100">
+              <form id="register-user" class="w-100 h-100 p-3">
+                <p>So, you are?</p>
+                <div class="divider"></div>
+                <div class="d-flex">
+                  <button class="btn btn-primary col-5 mr-auto"><i class="fab fa-facebook-square"></i></button>
+                  <button class="btn btn-primary col-5 ml-auto"><i class="fab fa-google"></i></button>
+                </div>
+                <div class="divider"></div>
+                <div class="d-flex">
+                  <input type="text" name="first-name" class="px-2 col-5 mr-auto" placeholder="First Name">
+                  <input type="text" name="last-name" class="px-2 col-5 ml-auto" placeholder="Last Name">
+                </div>
+                <input type="text" name="username" class="px-2 col-12" placeholder="*Username">
+                <input type="email" name="email" class="px-2 col-12" placeholder="*Email Address">
+                <input type="email" name="email-confirmation" class="px-2 col-12" placeholder="*Confirm Email">
+                <input type="password" name="password" class="px-2 col-12" placeholder="*Password">
+                <input type="password" name="password-confirmation" class="px-2 col-12" placeholder="*Confirm Password">
+                <button type="submit" class="btn btn-primary col-12 submit" (click)="submitDataUser()">Next</button>
+                <p>By signing up. You agree to IndieGim Terms of Use, Privacy Policy and Cookie Policy</p>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section id="developer" class="section-register">
+          <div class="card-class col-6 px-0" style="background-color:rgba(0,0,0,0.3)">
+            <div class="d-flex h-100">
+              <div class="text-justify w-100 h-100 p-3 benefit">
+                <p class="mb-1">Why join indiegim?</p>
+                <p>Because get Salary</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-class col-6 px-0">
+            <div class="h-100 dev-part active"> <!-- part 1 Dev -->
+              <form id="register-developer-one" class="w-100 h-100 p-3">
+                <p>So, you are?</p>
+                <div class="divider"></div>
+                <div class="d-flex">
+                  <button class="btn btn-primary col-5 mr-auto"><i class="fab fa-facebook-square"></i></button>
+                  <button class="btn btn-primary col-5 ml-auto"><i class="fab fa-google"></i></button>
+                </div>
+                <div class="divider"></div>
+                <input type="text" name="displayname" class="px-2 col-12" placeholder="Display Name">
+                <input type="text" name="username" class="px-2 col-12" placeholder="*Username">
+                <input type="email" name="email" class="px-2 col-12" placeholder="*Email Address">
+                <input type="email" name="email_confirmation" class="px-2 col-12" placeholder="*Confirm Email">
+                <input type="password" name="password" class="px-2 col-12" placeholder="*Password">
+                <input type="password" name="password_confirmation" class="px-2 col-12" placeholder="*Confirm Password">
+                <!-- <div class="d-flex">
+                  <div class="col-6 px-0 d-flex justify-content-center align-items-center">Link : /developer/</div>
+                  <input type="text" class="col-6 pl-0" placeholder="url">
+                </div> -->
+                <button type="submit" class="btn btn-primary col-12 submit" (click)="submitDataPrimaryDev()">Next</button>
+                <p>By signing up. You agree to IndieGim Terms of Use, Privacy Policy and Cookie Policy</p>
+              </form>
+            </div>
+
+            <div class="h-100 dev-part"> <!-- part 2 Dev -->
+              <form id="register-developer-two" class="w-100 h-100 p-3">
+                <p>Insert RPG intro dialogue</p>
+                <div class="divider"></div>
+                <input type="text" name="dev_studio_name" class="px-2 col-12" placeholder="*Studio Name">
+                <input type="text" name="studioEmail" class="px-2 col-12" placeholder="*Studio Email">
+                <input type="text" name="website" class="px-2 col-12" placeholder="*Studio Website">
+                <input type="text" name="dev_studio_social" class="px-2 col-12" placeholder="*Studio Social Media Url">
+                <input type="text" name="dev_studio_social" class="px-2 col-12" placeholder="*Studio Social Media Url (optional)">
+                <input type="text" name="dev_studio_social" class="px-2 col-12" placeholder="*Studio Social Media Url (optional)">
+                <button type="submit" class="btn btn-primary col-12 submit" (click)="submitDataSecondaryDev()">Next</button>
+                <p>By signing up. You agree to IndieGim Terms of Use, Privacy Policy and Cookie Policy</p>
+              </form>
+            </div>
+
+            <div class="h-100 dev-part">
+              <div class="col-6 m-auto">
+                <div class="pb-3"><button class="btn btn-primary w-100" routerLink="/register-game">Register Game</button></div>
+                <div class="pt-3"><button class="btn btn-primary w-100" routerLink="/">Skip</button></div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
