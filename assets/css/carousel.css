@@ -1,0 +1,50 @@
+.carousel-items{
+  display: none;
+  visibility: hidden;
+}
+
+#carousel .active{
+  display: block;
+  visibility: visible;
+	-webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.button-carousel{
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: gray;
+  cursor: pointer;
+}
+
+#carousel .right{
+  right: 15px;
+}
+
+/* #carousel .right:hover{
+  display: block;
+  animation: fadeIn 1s;
+} */
+
+#carousel .left{
+  left: 15px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
